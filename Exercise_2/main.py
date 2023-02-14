@@ -1,4 +1,6 @@
-"""Задача 32: Определить индексы элементов массива (списка), значения которых принадлежат заданному диапазону (т.е. не меньше заданного минимума и не больше заданного максимума)"""
+"""Задача 32: Определить индексы элементов массива (списка), значения
+которых принадлежат заданному диапазону (т.е. не меньше заданного
+минимума и не больше заданного максимума)"""
 
 
 import sys
@@ -14,8 +16,8 @@ def fill_list_of_numbers(list, n):
     while count <= n:
         try:
             number = int(input(f"Enter the number at index {count - 1}: "))
-        except ValueError as ex:
-            print(f"Error: {ex}")
+        except ValueError as exc:
+            print(f"Error: {exc}")
             sys.exit()
         list.append(number)
         count += 1
